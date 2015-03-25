@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>640</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>640</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>crino</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <widget class="QTabWidget" name="crino">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>100</y>
+      <width>641</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="SAM_generate">
+     <attribute name="title">
+      <string>Tab 1</string>
+     </attribute>
+     <widget class="QLabel" name="SAM_generate_status">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Status</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="SimulationBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>271</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Simulation Box</string>
+      </property>
+      <widget class="QLabel" name="xlh">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>xlh = 300</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="ylh">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>ylh = 300</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="zlh">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>80</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>zlh = 300</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="xlo">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>20</y>
+         <width>61</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>-10</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="zhi">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>80</y>
+         <width>61</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>299.833</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="zlo">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>80</y>
+         <width>61</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>0.167143</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="yhi">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>50</y>
+         <width>61</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>299.833</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="ylo">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>50</y>
+         <width>61</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>0.167143</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="xhi">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>20</y>
+         <width>61</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>420</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="spositionx">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>110</y>
+         <width>61</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>300.0</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="spositionx_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>110</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>s position(x)</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Preview">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>110</y>
+         <width>51</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Preview</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="SAM_generate_start">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>280</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Generate</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="SAMANA">
+     <attribute name="title">
+      <string>Tab 2</string>
+     </attribute>
+     <widget class="QGroupBox" name="Search_dumpfile">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>30</y>
+        <width>311</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Search</string>
+      </property>
+      <widget class="QPushButton" name="Search_start">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>50</y>
+         <width>75</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Search</string>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="numstart">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>20</y>
+         <width>101</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>10000000</number>
+       </property>
+       <property name="singleStep">
+        <number>1000</number>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="numend">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>50</y>
+         <width>101</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="minimum">
+        <number>0</number>
+       </property>
+       <property name="maximum">
+        <number>10000000</number>
+       </property>
+       <property name="singleStep">
+        <number>1000</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="nstart">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>46</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Start</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="nend">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>46</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>End</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="Dumpfile_type">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>301</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Input dump file type</string>
+      </property>
+      <widget class="QRadioButton" name="isdumpfileoldsam">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Old SAM</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="isdumpfilewopea">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>No c_pea</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="isdumpfilewpea">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>60</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>c_pea</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="Histogram">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>301</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Histogram</string>
+      </property>
+      <widget class="QSpinBox" name="Binsizevalue">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>20</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="minimum">
+        <number>90</number>
+       </property>
+       <property name="maximum">
+        <number>18000</number>
+       </property>
+       <property name="singleStep">
+        <number>90</number>
+       </property>
+       <property name="value">
+        <number>180</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="Binsize">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>46</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Bin Size</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Compute_Histogram">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>20</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Compute</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="Binsize_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>46</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Bin Size 2</string>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="Binsizevalue_2">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>50</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="minimum">
+        <number>90</number>
+       </property>
+       <property name="maximum">
+        <number>18000</number>
+       </property>
+       <property name="singleStep">
+        <number>90</number>
+       </property>
+       <property name="value">
+        <number>180</number>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Compute_Normal">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>50</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Normal</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>91</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Status</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="StructureFactor">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>120</y>
+        <width>311</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Structure Factor</string>
+      </property>
+      <widget class="QPushButton" name="Compute_SF">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>50</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Compute</string>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="k1d">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>20</y>
+         <width>87</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="minimum">
+        <number>1000</number>
+       </property>
+       <property name="maximum">
+        <number>10000</number>
+       </property>
+       <property name="singleStep">
+        <number>100</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>21</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Sample rate</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Sample range</string>
+       </property>
+      </widget>
+      <widget class="QDoubleSpinBox" name="krange">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>50</y>
+         <width>91</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="minimum">
+        <double>2.000000000000000</double>
+       </property>
+       <property name="maximum">
+        <double>100.000000000000000</double>
+       </property>
+       <property name="singleStep">
+        <double>0.100000000000000</double>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>351</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Basic Info</string>
+    </property>
+    <widget class="QLineEdit" name="search_dir">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>20</y>
+       <width>231</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>H:\Simulation Results\TMP\</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="nstart_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>46</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Directory</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>46</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SAM units</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="samunits">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>50</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>7</number>
+     </property>
+     <property name="maximum">
+      <number>31</number>
+     </property>
+     <property name="singleStep">
+      <number>2</number>
+     </property>
+     <property name="value">
+      <number>17</number>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
